@@ -1,5 +1,8 @@
 # Khala
-Khala Connect everything
+Khala Connect everything :)
+Based on n2n, we add UDP punching process.
+It is possible to make a UDP hole between NAT3 - NAT4 or NAT4 - NAT4.
+We do not have any plan for further development and support, good luck :)
 
 ## Build
 
