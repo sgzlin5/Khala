@@ -1,0 +1,38 @@
+version: '2'
+services:
+  supernode:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: supernode
+    container_name: khala
+    restart: always
+    hostname: supernode
+    network_mode: host
+    environment:
+      - PORT=7654
+      - AUTH_URL=http://10.51.133.101:8100/base/khala/vnp/auth
+
+  violet1:
+    build:
+      dockerfile: ./violet/Dockerfile
+      context: .
+    image: violet1
+    container_name: violet1
+    restart: always
+    hostname: violet1
+    network_mode: host
+    environment:
+      - PORT=3478
+
+  violet2:
+    build:
+      dockerfile: ./violet/Dockerfile
+      context: .
+    image: violet2
+    container_name: violet2
+    restart: always
+    hostname: violet2
+    network_mode: host
+    environment:
+      - PORT=3479
