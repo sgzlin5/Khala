@@ -2,7 +2,7 @@
 Khala Connect everything!
 
 
-Based on n2n, we add UDP punching process make it is possible to make a UDP hole between NAT3 <-> NAT4 or NAT4 <-> NAT4.
+Based on n2n, we add UDP punching process make it is possible to make a UDP hole between NAT3 <-> NAT4.
 
 
 We would not have any plan for further development and support, good luck :)
